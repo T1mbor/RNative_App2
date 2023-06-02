@@ -14,7 +14,12 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: SIZES.large,
     fontFamily: FONT.medium,
-    color: COLORS.primary,
+    color: COLORS.black,
+    backgroundColor: COLORS.gray2,
+    borderColor: COLORS.black, 
+    borderTopLeftRadius: 5,
+    borderTopRightRadius: 5,
+    textAlign: 'center',
   },
   headerBtn: {
     fontSize: SIZES.medium,

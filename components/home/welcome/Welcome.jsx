@@ -9,10 +9,10 @@ import {
 } from "react-native";
 import { useRouter } from "expo-router";
 
-import styles from "./welcome.style";
+import styles from "./welcome.style"; 
 import { icons, SIZES } from "../../../constants";
 
-const jobTypes = ["Full-time", "Part-time", "Contractor"];
+const jobTypes = ["Терм. виклики", "Найближче укриття", "Ліхтарик"];
 
 const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
   const router = useRouter();
@@ -21,8 +21,8 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}>Hello Adrian</Text>
-        <Text style={styles.welcomeMessage}>Find your perfect job</Text>
+        <Text style={styles.userName}>Вітання, "Ім'я"</Text>
+        <Text style={styles.welcomeMessage}>Ніколи не зашкодить переглянути правила безпеки</Text>
       </View>
 
       <View style={styles.searchContainer}>
@@ -31,7 +31,7 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
             style={styles.searchInput}
             value={searchTerm}
             onChangeText={(text) => setSearchTerm(text)}
-            placeholder='What are you looking for?'
+            placeholder='Оберіть вашу область'
           />
         </View>
 
@@ -59,7 +59,7 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
             </TouchableOpacity>
           )}
           keyExtractor={(item) => item}
-          contentContainerStyle={{ columnGap: SIZES.small }}
+          contentContainerStyle={{ columnGap: SIZES.xSmall }}
           horizontal
         />
       </View>
